@@ -1,0 +1,288 @@
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Rubik";
+}
+
+:root {
+  --primary-color-green: #9ac837;
+  --primary-color-orange: #f7961d;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wp {
+  padding: 3% 6%;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+.desc {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+
+.desc p {
+  text-align: justify;
+}
+
+.hero {
+  height: 100vh;
+}
+
+/* ---Navbar--- */
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+
+.nav-link:hover {
+  color: var(--primary-color-orange) !important;
+}
+
+.nav-item {
+  padding: 0px 25px;
+}
+/* ---End of Navbar--- */
+
+/* ---Landing Page--- */
+#title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Be Vietnam";
+  font-size: 30px;
+}
+
+#title h1 {
+  font-weight: 1000;
+  margin-left: 30px;
+  line-height: 1.5;
+}
+
+#title-img img {
+  width: 80%;
+  border-radius: 50%;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
+#learn {
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 20px;
+  background-color: var(--primary-color-orange);
+  border: none;
+  color: white;
+  border-radius: 15px;
+  padding: 8px 20px;
+  font-weight: 600;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+}
+/* ---End of Landing Page--- */
+
+/* ---About Us Section--- */
+.carousel-item img {
+  border-radius: 20px;
+}
+/* ---End of About Us Section--- */
+
+/* ---Promo Section--- */
+#discount {
+  display: block;
+  margin: auto;
+}
+
+#order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem 3rem;
+}
+
+#order img {
+  width: 100%;
+}
+/* ---End of Promo Section--- */
+
+/* ---Menu Section--- */
+#menu {
+  padding: 5% 18%;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+#menu .row {
+  margin-top: 15px;
+}
+
+#menu img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+#menu h4 {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+#best-seller::after {
+  content: "";
+  display: block;
+  margin: 5px auto;
+  height: 2px;
+  width: 15%;
+  background-color: var(--primary-color-orange);
+}
+
+.card {
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 18px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  text-align: center;
+  width: 15rem;
+}
+
+.card h5 {
+  font-weight: bold;
+}
+
+.card:hover {
+  transform: scale(1.04);
+}
+
+#selengkapnya {
+  margin-top: 1.5rem;
+  background-color: var(--primary-color-orange);
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  color: white;
+}
+/* ---End of Menu Section--- */
+
+/* ---Location Section--- */
+#location {
+  background-color: var(--primary-color-green);
+  color: white;
+}
+
+#peta {
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+}
+
+#lokasi-selengkapnya {
+  height: auto;
+  font-size: 1rem;
+  border-radius: 15px;
+  padding: 10px 20px;
+  color: white;
+  background-color: var(--primary-color-orange);
+  border: none;
+}
+/* ---End of Location Section--- */
+
+/* --Footer--- */
+footer img {
+  width: 60%;
+}
+
+footer {
+  padding: 3% 10% !important;
+  background-color: #737373;
+}
+
+footer h3 {
+  color: white;
+  font-weight: bold;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: var(--primary-color-orange);
+}
+/* ---End of Footer--- */
+
+/* Media Quaries */
+@media screen and (max-width: 1218px) {
+  .card {
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .hero {
+    height: auto;
+  }
+  .desc {
+    margin: 1.5rem auto auto auto;
+  }
+  #title h1 {
+    margin-left: 0;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .wave {
+    position: relative;
+  }
+  #learn,
+  #lokasi-selengkapnya {
+    margin-left: 0;
+    margin-bottom: 15px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #order {
+    margin-bottom: 10px;
+  }
+  #order .col {
+    padding: 0;
+  }
+  #order img {
+    width: 85%;
+  }
+  #discount {
+    width: 50%;
+  }
+  footer img {
+    display: none;
+  }
+  footer {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #learn {
+    font-size: 1rem;
+  }
+  #discount {
+    width: 65%;
+  }
+}

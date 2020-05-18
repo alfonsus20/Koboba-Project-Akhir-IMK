@@ -1,0 +1,154 @@
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Rubik";
+}
+
+:root {
+  --primary-color-green: #9ac837;
+  --primary-color-orange: #f7961d;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  margin: 5px auto;
+  height: 2px;
+  width: 10%;
+  background-color: var(--primary-color-orange);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+
+.nav-link:hover {
+  color: var(--primary-color-orange) !important;
+}
+
+.nav-item {
+  padding: 0px 25px;
+}
+
+#menu {
+  padding: 0 8%;
+  text-align: center;
+}
+
+#menu .row {
+  margin-top: 15px;
+}
+
+#menu img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.card {
+  margin: 20px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 18px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  text-align: center;
+  width: 16rem;
+}
+
+.card h5 {
+  font-weight: bold;
+}
+
+
+.card-text {
+  margin-bottom: 10px;
+}
+
+.share-content {
+  text-align: right;
+  margin: 0;
+}
+
+.share {
+  color: var(--primary-color-orange);
+  cursor: pointer;
+}
+
+.share:hover {
+  color: var(--primary-color-orange);
+  text-decoration: underline;
+}
+
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  display:none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+
+.appear{
+  display: flex;
+}
+
+.overlay-content{
+  background-color: white;
+  padding: 1rem 2rem;
+}
+
+.overlay-content h2{
+  margin-bottom: 0.8rem;
+}
+
+.fa-times{
+  position: relative;
+  text-align: right;
+}
+
+#batal{
+  text-align: right;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+  .card {
+    width: 90%;
+  } 
+}
+
+@media screen and (max-width: 670px) {
+  #menu {
+    padding: 20px;
+  }
+  .wp {
+    padding: 10px;
+    width: 50%;
+  }
+  .card {
+    width: 100%;
+  }
+  .card-title{
+    font-size: 1rem;
+  }
+  .card-body {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 478px){
+  .wp{
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .card{
+    box-shadow: none;
+  }
+} 
