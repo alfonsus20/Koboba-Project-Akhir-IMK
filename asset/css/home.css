@@ -53,7 +53,11 @@ h2 {
 }
 
 .nav-item {
-  padding: 0px 25px;
+  padding: 0px 15px;
+}
+
+.active a{
+  color: var(--primary-color-orange)!important;
 }
 /* ---End of Navbar--- */
 
@@ -270,11 +274,14 @@ footer a:hover {
   #discount {
     width: 50%;
   }
-  footer img {
-    display: none;
-  }
   footer {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px){
+  footer img {
+    display: none;
   }
 }
 
@@ -286,3 +293,4 @@ footer a:hover {
     width: 65%;
   }
 }
+

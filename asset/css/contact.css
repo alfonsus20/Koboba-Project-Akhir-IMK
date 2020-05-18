@@ -18,11 +18,19 @@
 }
 
 .nav-item {
-  padding: 0px 25px;
+  padding: 0px 15px;
+}
+
+.active a{
+  color: var(--primary-color-orange)!important;
 }
 
 #contact-us {
   padding: 1.5% 10%;
+}
+
+h1{
+  font-weight: bold;
 }
 
 h1,
@@ -72,4 +80,77 @@ button {
   border-radius: 15px;
   color: white;
   padding: 5px 20px;
+}
+
+p{
+  text-align: center;
+  color: var(--primary-color-orange);
+}
+
+.contact-via{
+  text-align: center;
+}
+
+.contact-via dd{
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.contact-via dd a{
+  color: gray;
+}
+
+.contact-via dd a:hover{
+  color: var(--primary-color-orange);
+  text-decoration: none;
+}
+
+/* --Footer--- */
+footer img {
+  width: 60%;
+}
+
+footer {
+  padding: 3% 10% !important;
+  background-color: #737373;
+}
+
+footer h3 {
+  color: white;
+  font-weight: bold;
+}
+
+footer a {
+  color: white;
+  text-decoration: none!important;
+}
+
+footer a:hover {
+  color: var(--primary-color-orange);
+}
+/* ---End of Footer--- */
+
+/* Media Quaries */
+@media screen and (max-width:991px){
+  #img-col{
+    display: none;
+  }
+  p{
+    margin-top: 10px;
+  }
+  footer {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px){
+  footer img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 540px){
+  h1{
+    font-size: 2rem;
+  }
 }

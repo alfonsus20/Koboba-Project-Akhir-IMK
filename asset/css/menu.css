@@ -9,6 +9,10 @@
   --primary-color-orange: #f7961d;
 }
 
+h1{
+  font-weight: bold;
+}
+
 h1::after {
   content: "";
   display: block;
@@ -27,7 +31,11 @@ h1::after {
 }
 
 .nav-item {
-  padding: 0px 25px;
+  padding: 0px 15px;
+}
+
+.active a{
+  color: var(--primary-color-orange)!important;
 }
 
 #menu {
@@ -58,7 +66,6 @@ h1::after {
   font-weight: bold;
 }
 
-
 .card-text {
   margin-bottom: 10px;
 }
@@ -78,53 +85,89 @@ h1::after {
   text-decoration: underline;
 }
 
-.overlay{
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
   width: 100vw;
   height: 100vh;
-  display:none;
+  display: none;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
 
-.appear{
+.appear {
   display: flex;
 }
 
-.overlay-content{
+.overlay-content {
   background-color: white;
   padding: 1rem 2rem;
 }
 
-.overlay-content h2{
+.overlay-content h2 {
   margin-bottom: 0.8rem;
 }
 
-.fa-times{
+.fa-times {
   position: relative;
   text-align: right;
 }
 
-#batal{
+#batal {
   text-align: right;
   font-size: 1rem;
   cursor: pointer;
 }
 
+/* --Footer--- */
+footer img {
+  width: 60%;
+}
+
+footer {
+  padding: 3% 10% !important;
+  background-color: #737373;
+}
+
+footer h3 {
+  color: white;
+  font-weight: bold;
+}
+
+footer a {
+  color: white;
+  text-decoration: none!important;
+}
+
+footer a:hover {
+  color: var(--primary-color-orange);
+}
+
+/* ---End of Footer--- */
+
+/* Media Quaries */
 @media screen and (max-width: 991px) {
   .card {
     width: 90%;
-  } 
+  }
+  footer {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px){
+  footer img {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 670px) {
   #menu {
-    padding: 20px;
+    padding: 1% 5%;
   }
   .wp {
     padding: 10px;
@@ -133,7 +176,7 @@ h1::after {
   .card {
     width: 100%;
   }
-  .card-title{
+  .card-title {
     font-size: 1rem;
   }
   .card-body {
@@ -141,14 +184,20 @@ h1::after {
   }
 }
 
-@media screen and (max-width: 478px){
-  .wp{
+@media screen and (max-width: 540px){
+  h1{
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 478px) {
+  .wp {
     padding: 5px;
   }
 }
 
-@media screen and (max-width: 400px){
-  .card{
+@media screen and (max-width: 400px) {
+  .card {
     box-shadow: none;
   }
-} 
+}
